@@ -2,6 +2,9 @@
 * {
     box-sizing: border-box;
 }
+/*root{*/
+/*    font-size: 16px;*/
+/*}*/
 
 body,
 html {
@@ -32,9 +35,9 @@ body {
 }
 
 #content-slider .slider-wrap {
-    max-width: 1200px;
+    max-width: 75rem;
     width: 100%;
-    margin: 0px auto;
+    margin: 0 auto;
     position: relative;
     text-align: right;
 }
@@ -59,8 +62,8 @@ body {
 
 #content-slider a:focus {
     outline: thin dotted #333;
-    outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px;
+    outline: 0.3rem auto -webkit-focus-ring-color;
+    outline-offset: -0.125rem;
 }
 
 #content-slider a:hover,
@@ -133,7 +136,7 @@ body {
     text-transform: uppercase;
     padding: 0;
     margin: 0;
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: 700;
     line-height: 1.2;
 }
@@ -245,22 +248,22 @@ body {
 }
 
 #content-slider input[type='radio'] {
-    width: 10px;
-    height: 10px;
+    width: 0.6rem;
+    height: 0.6rem;
     display: none;
 }
 
 #content-slider .slider-dot {
-    width: 30px;
-    height: 30px;
-    margin: 0 5px;
+    width: 1.9rem;
+    height: 1.9rem;
+    margin: 0 0.3rem;
     text-align: center;
     display: inline-block;
     position: relative;
     z-index: 1000;
     cursor: pointer;
     border-radius: 100%;
-    border: 10px solid #00ABFA;
+    border: 0.6rem solid #00ABFA;
     background: #00ABFA;
 
     transition: all 0.3s ease-in-out;
@@ -271,18 +274,18 @@ body {
     display: flex;
     position: fixed;
     right: auto;
-    margin-left: 445px;
-    top: 640px;
+    margin-left: 28rem;
+    top: 40rem;
     text-align: center;
     font-size: 0;
     line-height: 0;
 }
 
 #content-slider .slider-dot-control > label:hover {
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
     background: #FFF;
-    border: 6px solid #00ABFA;
+    border: 0.375rem solid #00ABFA;
 }
 
 
@@ -292,7 +295,7 @@ body {
 
 
 #input-1:checked ~ .slider .slider-inner {
-    margin-left: 0%;
+    margin-left: 0;
 }
 
 #input-2:checked ~ .slider .slider-inner {
@@ -401,7 +404,7 @@ body {
 /* -------> Responsive */
 @media (max-width: 992px) {
     html {
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 
     #content-slider .slider-thumb .head {
@@ -411,7 +414,7 @@ body {
 
 @media (max-width: 768px) {
     html {
-        font-size: 10px;
+        font-size: 0.6rem;
     }
 
     #content-slider .slider .head {
@@ -447,5 +450,9 @@ body {
 @media (max-width: 768px) {
     #content-slider .slider {
         width: 90%;
+    }
+    #content-slider .slider h2, #content-slider .slider-thumb h2 {
+        text-align: left;
+        font-size: 1.2rem;
     }
 }
