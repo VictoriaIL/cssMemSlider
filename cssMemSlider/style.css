@@ -19,7 +19,13 @@ body {
     color: #fff;
     background: #374046;
 }
-
+#content-slider .slider p {
+    font-size: 2.2rem !important;
+    line-height: 3.2 !important;
+    margin: 0 !important;
+    font-weight: bold;
+    text-align: center;
+}
 /* ----> wrapper */
 #content-slider .slider-tools {
     /*display: flex;*/
@@ -247,7 +253,7 @@ body {
 #content-slider .slider-dot {
     width: 30px;
     height: 30px;
-    margin: 0 2px;
+    margin: 0 5px;
     text-align: center;
     display: inline-block;
     position: relative;
@@ -264,10 +270,9 @@ body {
     padding: 1rem 0;
     display: flex;
     position: fixed;
-    right: 0;
-    bottom: 15%;
-    margin-right: 15px;
-    margin-left: auto;
+    right: auto;
+    margin-left: 445px;
+    top: 715px;
     text-align: center;
     font-size: 0;
     line-height: 0;
@@ -279,6 +284,8 @@ body {
     background: #FFF;
     border: 6px solid #00ABFA;
 }
+
+
 
 
 /* -------> Controls */
@@ -391,20 +398,6 @@ body {
 }
 
 
-/* -------> Animation */
-/*
-@keyframes slidy {
-20% { margin-left:    0%; }
-25% { margin-left: -100%; }
-45% { margin-left: -100%; }
-50% { margin-left: -200%; }
-70% { margin-left: -200%; }
-75% { margin-left: -300%; }
-95% { margin-left: -300%; }
-100% { margin-left: -400%; }
-}*/
-
-
 /* -------> Responsive */
 @media (max-width: 992px) {
     html {
@@ -424,40 +417,35 @@ body {
     #content-slider .slider .head {
         display: none;
     }
+}
 
-    #content-slider .slider-dot {
-        display: none;
-    }
-
-
-    #content-slider #thumb-2:focus {
-        opacity: 1;
-    }
-
-    #thumb-2:focus ~ #thumb-5 {
-        display: none;
-    }
-
-    #content-slider #thumb-3:focus {
-        opacity: 1;
-    }
-
-    #thumb-3:focus ~ #thumb-5 {
-        display: none;
-    }
-
-    #content-slider #thumb-4:focus {
-        opacity: 1;
-    }
-
-    #thumb-4:focus ~ #thumb-5 {
-        display: none;
+@media (max-width: 1200px) {
+    #content-slider .slider-dot-control {
+        position: initial;
     }
 
 }
 
-@media (max-width: 480px) {
-    #content-slider .slider-thumb img {
-        display: none;
+@media (max-width: 1200px) {
+    #content-slider .slider-titles {
+        display: flex;
+        width: 100% !important;
+        flex-direction: column-reverse;
+    }
+
+    #content-slider .slider-dot-control {
+        justify-content: center;
+        margin: 0;
+    }
+
+    #content-slider .slider {
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #content-slider .slider {
+        width: 90%;
     }
 }
